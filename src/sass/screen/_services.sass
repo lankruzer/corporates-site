@@ -1,0 +1,47 @@
+.screen-services
+	+image('screen-services-bg.png')
+	background-repeat: no-repeat
+	background-position: right bottom
+	&__service
+		box-sizing: border-box
+		margin-bottom: 80px
+		padding: 0 10px
+		width: calc(100% / 5)
+		// &_bonus
+		// 	margin-bottom: 24px
+
+.service
+	&__wrapper
+		position: relative
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		align-items: center
+		min-height: 180px
+	&__img
+		max-width: 80%
+		max-height: 100px
+		width: auto
+		height: auto
+	&__title
+		position: absolute
+		z-index: 2
+		top: 0
+		left: 0
+		display: flex
+		justify-content: center
+		align-items: center
+		box-sizing: border-box
+		padding: 0 10px 15px
+		width: 100%
+		min-height: 66px
+		text-align: center
+		font-family: $got
+		+fs(14)
+		+lh(14, 20)
+		letter-spacing: 0.04em
+		color: #fff
+		+image('service-title-bg.png')
+		background-size: 100% 100%
+		&_bonus
+			+image('service-bonus-title-bg.png')

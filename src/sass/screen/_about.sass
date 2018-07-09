@@ -1,0 +1,42 @@
+.screen-about
+	&__wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+	&__worker
+		margin: 0 3%
+		width: 23.6%	
+
+.worker
+	&-img
+		width: 100%
+		height: 260px
+		overflow: hidden
+		text-align: center
+		&__img
+			display: inline-block
+			vertical-align: middle
+			width: auto
+			height: 100%
+			@supports (object-fit: cover)
+				width: 100%
+				object-fit: cover
+	&-info
+		box-sizing: border-box
+		padding: 20px 15px 30px
+		text-align: center
+		background-color: rgba($orange, .3)
+		&__name
+			margin-bottom: 10px
+			+fs(18)
+			font-weight: 700
+		&__text
+			margin: 0
+			+fs(15)
+			color: rgba($blue, .7)
+	&:nth-of-type(1),
+	&:nth-of-type(2),
+	&:nth-of-type(3)
+		margin-bottom: 100px
+		.worker-info
+			background-color: rgba($pink, .3)

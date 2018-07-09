@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 21000 29700" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str4 {stroke:#BA5D8C;stroke-width:20;stroke-opacity:0.701961}
+    .str3 {stroke:#BA5D8C;stroke-width:20;stroke-linejoin:round;stroke-opacity:0.800000}
+    .str0 {stroke:#BA5D8C;stroke-width:100}
+    .str2 {stroke:#E79074;stroke-width:100}
+    .str5 {stroke:#E79074;stroke-width:20}
+    .str1 {stroke:#E79074;stroke-width:20;stroke-linejoin:round}
+    .fil0 {fill:none}
+    .fil1 {fill:#E79074}
+    .fil3 {fill:#BA5D8C;fill-opacity:0.701961}
+    .fil2 {fill:#BA5D8C;fill-opacity:0.800000}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_841408768">
+   <g>
+    <line class="fil0 str0" x1="8479" y1="14585" x2="9977" y2= "17181" />
+    <path class="fil1 str1" d="M9771 13928c-248,-429 215,-656 366,-743 468,-270 1320,-115 1511,-337 106,-123 -129,-356 -387,-167 197,-259 725,-120 660,208 -74,374 -1932,301 -2029,1250 -871,-391 -1736,1255 -2097,1132 -317,-108 -173,-635 150,-676 -293,129 -209,449 -49,419 288,-55 579,-870 1047,-1140 151,-87 580,-375 828,54z"/>
+   </g>
+   <g>
+    <line class="fil0 str2" x1="12890" y1="12960" x2="11932" y2= "14619" />
+    <path class="fil2 str3" d="M12798 11515c-28,-73 -282,-371 -560,-316 -445,88 -607,890 -1528,818 272,121 607,183 935,154 327,-28 605,-260 958,-318 126,334 64,691 203,989 139,298 360,557 601,732 -522,-761 91,-1303 -56,-1732 -91,-268 -476,-339 -553,-327z"/>
+   </g>
+   <g>
+    <line class="fil0 str2" x1="11976" y1="16188" x2="11360" y2= "18486" />
+    <path class="fil3 str4" d="M11074 15071c-196,-251 -587,-539 -683,-578 -384,-155 -637,956 -431,1171 100,104 655,-4 999,-167l0 0c-9,-28 -10,-59 -1,-90l69 -259c8,-31 25,-57 46,-77l0 0z"/>
+    <path class="fil3 str4" d="M11509 15188c295,-120 778,-173 880,-159 410,58 74,1147 -212,1229 -138,40 -565,-331 -782,-644l0 0c22,-20 38,-46 46,-77l69 -259c8,-31 7,-61 -1,-90l0 0z"/>
+    <rect class="fil1 str5" transform="matrix(-1.37411 -0.368191 -0.34638 1.29271 11551.7 15117.8)" width="351" height="446" rx="116" ry="116"/>
+   </g>
+  </g>
+ </g>
+</svg>

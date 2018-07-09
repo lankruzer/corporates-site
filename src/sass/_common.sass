@@ -1,5 +1,13 @@
 body
+	display: flex
+	flex-direction: column
+	font-family: $got
+	font-size: 14px
+	line-height: normal
+	letter-spacing: 40 / 1000 + em
+	color: $blue
 	background: #FFF
-	+css-lock(16, 50, 600, 1000)
-	line-height: 1.4
+	&.is-hide-scroll
+		height: 100%
+		overflow: hidden
 

@@ -1,0 +1,136 @@
+.screen-gallery
+	+image('screen-index-gallery-bg.png')
+	background-repeat: no-repeat
+	background-position: right bottom
+
+.index-gallery
+	margin-bottom: 60px
+	display: flex
+	&__row
+		display: flex
+		flex-wrap: wrap
+		width: 100%
+		flex-basis: 50%
+	&__col
+		display: flex
+		flex-direction: column
+		&_20
+			width: 20%
+		&_40
+			width: 40%
+		&_50
+			width: 50%
+	&-img
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+		height: 100%
+		overflow: hidden
+		&:hover
+			.index-gallery-img__overlay
+				opacity: 1
+		&__overlay
+			position: absolute
+			top: 0
+			left: 0
+			display: flex
+			justify-content: center
+			align-items: center
+			box-sizing: border-box
+			padding: 15px
+			width: 100%
+			height: 100%
+			text-align: center
+			font-family: $got
+			+fs(16)
+			font-weight: 700
+			color: #fff
+			background-color: rgba($blue, .7)
+			opacity: 0
+			transition: .25s
+		&__img
+			display: inline-block
+			vertical-align: middle
+			object-fit: cover
+			width: 100%
+			height: 100%
+		&__video
+			position: absolute
+			bottom: 0
+			left: 0
+			display: block
+			width: 100%
+			height: auto
+			min-width: 100%
+			min-height: 100%
+				
+.lightboxOverlay
+	opacity: 1
+	background-color: rgba($blue, .7)
+
+.lb-data
+	.lb-close
+		position: fixed
+		top: 10px
+		right: 10px
+		z-index: 5
+		display: block
+		width: 25px
+		height: 25px
+		opacity: 1
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 100%
+			height: 4px
+			background-color: $orange
+			transition: .25s
+		&::before
+			transform: translate(-50%, -50%) rotate(45deg)
+		&::after
+			transform: translate(-50%, -50%) rotate(-45deg)
+		&:hover
+			&::before,
+			&::after
+				background-color: $pink
+
+	.lb-caption
+		font-family: $got
+		font-size: 16px
+		font-weight: 700
+		letter-spacing: 0.04em
+		color: #fff
+
+.lb-nav 
+	a.lb-prev,
+	a.lb-next
+		position: relative
+		opacity: 1
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			width: 25px
+			height: 25px
+			box-sizing: border-box
+			border: 4px solid #fff
+			transition: .25s
+		&:hover::before
+			border-color: $pink
+	a.lb-prev
+		&::before
+			left: 15px
+			border-top: 0
+			border-right: 0
+			transform: translateY(-50%) rotate(45deg)
+	a.lb-next
+		&::before
+			right: 15px
+			border-bottom: 0
+			border-left: 0
+			transform: translateY(-50%) rotate(45deg)

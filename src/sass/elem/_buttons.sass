@@ -1,0 +1,67 @@
+.btn-wrapper
+	text-align: center
+
+.btn
+	display: inline-block
+	vertical-align: middle
+	box-sizing: border-box
+	padding: 0 10px
+	min-width: 202px
+	width: auto
+	text-align: center
+	font-family: $got
+	+fs(16)
+	+lh(16, 36)
+	letter-spacing: 80 / 1000 + em
+	color: #fff
+	text-decoration: none
+	background-color: $blue
+	border: 2px solid $blue
+	transition: .25s
+	cursor: pointer
+	&:hover
+		color: $blue
+		background-color: transparent
+		text-decoration: none
+	&_big
+		min-width: 272px
+		+fs(18)
+		+lh(18, 36)
+	&-hero-toggle
+		padding: 0
+		// min-width: 174px
+		border-color: rgba($blue, .0)
+		background-color: rgba($blue, .6)
+		&:hover
+			color: #fff
+			background-color: rgba($blue, 1)
+			border-color: rgba($blue, 1)
+	&_pink-hover
+		&:hover
+			border-color: $pink
+	&_orange-transparent
+		color: $blue
+		background-color: transparent
+		border-color: $orange
+		&:hover
+			color: #fff
+			background-color: $orange
+	&_pink-transparent
+		color: $blue
+		background-color: transparent
+		border-color: $pink
+		&:hover
+			color: #fff
+			background-color: $pink
+	&_pink
+		background-color: $pink
+		border-color: $pink
+		&:hover
+			color: $blue
+			background-color: transparent
+	&_orange
+		background-color: $orange
+		border-color: $orange
+		&:hover
+			color: $blue
+			background-color: transparent

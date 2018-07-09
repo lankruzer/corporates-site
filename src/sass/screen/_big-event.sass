@@ -1,0 +1,91 @@
+.screen-big-event
+	+image('screen-big-event-bg.png')
+	background-repeat: no-repeat
+	background-position: right bottom
+	.container
+		display: flex
+		flex-wrap: wrap
+
+	&__block-gallery,
+	&__info
+		box-sizing: border-box
+		padding: 0 15px
+		width: 50%
+
+.block-gallery
+	&__wrapper
+		margin-bottom: 24px
+		display: flex
+		flex-wrap: wrap
+		@supports (display: grid)
+			display: grid
+			grid-gap: 0
+			grid-template-columns: 1fr 1fr 1fr
+	&__col
+		text-align: center
+		overflow: hidden		
+		width: calc(100% / 3)
+		@supports (display: grid)
+			width: 100%
+		&_66
+			width: calc(100% - (100% / 3))
+			@supports (display: grid)
+				width: 100%
+				grid-column: 1 / 3
+	&__img
+		display: inline-block
+		vertical-align: middle
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+.block-gallery-soc
+	&__text
+		margin-bottom: 12px
+		font-family: $got
+		font-weight: 700
+		+fs(16)
+		+lh(16, 24)
+		color: rgba($blue, .6)
+
+.info
+	display: flex
+	flex-direction: column
+	text-align: center
+	&__subtitle
+		font-family: $got
+		font-weight: 700
+		+fs(13)
+		+lh(13, 24)
+		color: rgba($blue, .6)
+	&__title
+		margin-bottom: 48px
+		font-family: $const
+		font-weight: 700
+		font-style: italic
+		+fs(27)
+		color: $pink
+		&_margin
+			margin-top: auto
+	&-list
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		&-li
+			margin-bottom: 24px
+			box-sizing: border-box
+			padding: 0 12px
+			width: 50%
+			&__title,
+			&__text
+				margin-bottom: 6px
+				+fs(14)
+				+lh(14, 20)
+				font-weight: 700
+			&__text
+				margin-bottom: 0
+				color: rgba($blue, .7)
+	.btn-wrapper
+		margin: 0 auto 0
+	.btn
+		padding: 0 65px

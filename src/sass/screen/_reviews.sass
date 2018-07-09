@@ -1,0 +1,88 @@
+.screen-reviews
+	+image('screen-reviews-bg.png')
+	background-repeat: no-repeat
+	background-position: right bottom
+	&__wrapper
+		position: relative
+		margin: 0 auto 60px
+		box-sizing: border-box
+		padding: 0 100px
+		width: 100%
+		max-width: 755px
+	&__slider
+		width: 100%
+
+.reviews-slider
+	&__slide
+		display: flex!important
+		flex-direction: column
+		justify-content: space-between
+		box-sizing: border-box
+		min-height: 240px
+		+image('review-slide-bg.jpg')
+		+cover
+		background-position: top center
+	.slick-arrow
+		position: absolute
+		top: 0
+		width: 20px
+		height: 100%
+		font-size: 0
+		background-color: transparent
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 0
+			width: 0
+			height: 0
+			transform: translateY(-50%)
+			transition: .25s
+		&.slick-prev
+			left: -100px
+			&::before
+				border:
+					top: 20px solid transparent
+					right: 20px solid rgba($blue, .5)
+					bottom: 20px solid transparent
+			&:hover::before
+				border-right-color: $pink
+		&.slick-next
+			right: -100px 
+			&::before
+				border:
+					top: 20px solid transparent
+					left: 20px solid rgba($blue, .5)
+					bottom: 20px solid transparent
+			&:hover::before
+				border-left-color: $pink
+	&-slide
+		&__text
+			box-sizing: border-box
+			padding: 34px 24px
+			text-align: center
+			font-family: $got
+			+fs(16)
+			+lh(16, 24)
+			color: $blue
+		&__footer
+			display: flex
+			justify-content: center
+			align-items: center
+			min-height: 90px
+			text-align: center
+			+fs(18)
+			+lh(18, 24)
+			color: #fff
+			+image('review-footer-bg.png')
+			background-size: 100% 100%
+		&__read-more
+			display: inline-block
+			font-family: $got
+			+fs(16)
+			+lh(16, 24)
+			color: $pink
+			font-style: italic
+			transition: .25s
+			&:hover
+				color: $blue

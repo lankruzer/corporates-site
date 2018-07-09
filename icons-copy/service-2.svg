@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 21000 29700" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str4 {stroke:white;stroke-width:100;stroke-linejoin:round;stroke-opacity:0.400000}
+    .str1 {stroke:#221236;stroke-width:100;stroke-linejoin:round;stroke-opacity:0.501961}
+    .str9 {stroke:#221236;stroke-width:100;stroke-linejoin:round;stroke-opacity:0.600000}
+    .str0 {stroke:#221236;stroke-width:100;stroke-linejoin:round;stroke-opacity:0.701961}
+    .str5 {stroke:#221236;stroke-width:100;stroke-linecap:round;stroke-opacity:0.701961}
+    .str2 {stroke:#221236;stroke-width:100;stroke-linejoin:round;stroke-opacity:0.800000}
+    .str10 {stroke:#221236;stroke-width:100;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.800000}
+    .str7 {stroke:#221236;stroke-width:100;stroke-opacity:0.901961}
+    .str6 {stroke:#221236;stroke-width:100;stroke-linecap:round;stroke-opacity:0.901961}
+    .str8 {stroke:#E79074;stroke-width:100}
+    .str3 {stroke:#E79074;stroke-width:100;stroke-linejoin:round}
+    .fil7 {fill:none}
+    .fil0 {fill:none}
+    .fil9 {fill:none}
+    .fil5 {fill:none}
+    .fil3 {fill:#E79074}
+    .fil4 {fill:white;fill-opacity:0.400000}
+    .fil1 {fill:#221236;fill-opacity:0.501961}
+    .fil8 {fill:#221236;fill-opacity:0.600000}
+    .fil2 {fill:#221236;fill-opacity:0.800000}
+    .fil6 {fill:#221236;fill-opacity:0.901961}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_771686688">
+   <path class="fil0 str0" d="M12214 11662l-1178 0c0,407 527,736 1178,736 651,0 1178,-330 1178,-736l-1178 0z"/>
+   <path class="fil0 str0" d="M8680 11662l-1178 0c0,407 527,736 1178,736 651,0 1178,-330 1178,-736l-1178 0z"/>
+   <path class="fil1 str1" d="M12214 11662l-1178 0c0,186 527,337 1178,337 651,0 1178,-151 1178,-337l-1178 0z"/>
+   <path class="fil1 str1" d="M8680 11662l-1178 0c0,186 527,337 1178,337 651,0 1178,-151 1178,-337l-1178 0z"/>
+   <polygon class="fil2 str2" points="7612,15680 13502,15680 13502,18036 13306,18036 13306,15877 7809,15877 7809,18036 7612,18036 "/>
+   <path class="fil3 str3" d="M13502 15680l-5890 0 0 1374c245,-65 482,-196 736,-196 254,0 482,196 736,196 254,0 482,-196 736,-196 254,0 482,196 736,196 254,0 482,-196 736,-196 254,0 482,196 736,196 254,0 482,-196 736,-196 254,0 491,131 736,196l0 -1374z"/>
+   <path class="fil4 str4" d="M12766 15680l-4417 0 0 1178c254,0 482,196 736,196 254,0 482,-196 736,-196 254,0 482,196 736,196 254,0 482,-196 736,-196 254,0 482,196 736,196 254,0 482,-196 736,-196l0 -1178z"/>
+   <path class="fil4 str4" d="M12030 15680l-2945 0 0 1374c254,0 482,-196 736,-196 254,0 482,196 736,196 254,0 482,-196 736,-196 254,0 482,196 736,196l0 -1374z"/>
+   <path class="fil4 str4" d="M11293 16858l0 -1178 -1472 0 0 1178c254,0 482,196 736,196 254,0 482,-196 736,-196z"/>
+   <line class="fil0 str5" x1="10447" y1="12766" x2="10447" y2= "14141" />
+   <line class="fil5 str6" x1="9112" y1="12347" x2="9112" y2= "13721" />
+   <line class="fil0 str5" x1="7777" y1="12146" x2="7777" y2= "14110" />
+   <line class="fil0 str5" x1="13117" y1="12146" x2="13117" y2= "14110" />
+   <line class="fil5 str6" x1="11782" y1="12347" x2="11782" y2= "13721" />
+   <path class="fil6 str7" d="M10447 14149c81,0 147,66 147,147 0,81 -66,147 -147,147 -81,0 -147,-66 -147,-147 0,-81 66,-147 147,-147z"/>
+   <path class="fil6 str7" d="M7777 14110c81,0 147,66 147,147 0,81 -66,147 -147,147 -81,0 -147,-66 -147,-147 0,-81 66,-147 147,-147z"/>
+   <path class="fil6 str7" d="M13117 14110c81,0 147,66 147,147 0,81 -66,147 -147,147 -81,0 -147,-66 -147,-147 0,-81 66,-147 147,-147z"/>
+   <circle class="fil3 str8" cx="9112" cy="13869" r="147"/>
+   <circle class="fil3 str8" cx="11782" cy="13869" r="147"/>
+   <path class="fil7 str3" d="M10447 11662l-1767 0c0,610 954,1104 1767,1104 813,0 1767,-494 1767,-1104l-1767 0z"/>
+   <path class="fil8 str9" d="M10447 11662l-1767 0c0,284 954,514 1767,514 813,0 1767,-230 1767,-514l-1767 0z"/>
+   <line class="fil9 str10" x1="7502" y1="11662" x2="13392" y2= "11662" />
+  </g>
+ </g>
+</svg>

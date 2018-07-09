@@ -1,0 +1,163 @@
+.overlay
+	position: fixed
+	top: 0
+	left: 0
+	z-index: -1
+	width: 100%
+	height: 100vh
+	overflow: auto
+	background-color: rgba($blue, .7)
+	opacity: 0
+	transition: .25s
+	&.is-active
+		opacity: 1
+		z-index: 100
+	&__close
+		position: absolute
+		top: 0
+		right: 0
+		width: 40px
+		height: 40px
+		font-size: 0
+		cursor: pointer
+		border: 0
+		background-color: transparent
+		outline: none
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			width: 30px
+			height: 3px
+			background-color: $pink
+			transition: .25s
+		&::before
+			top: 50%
+			left: 0
+			transform: rotate(45deg)
+		&::after
+			top: 50%
+			left: 0
+			transform: rotate(-45deg)
+		&:hover::before,
+		&:hover::after
+			background-color: $orange
+	&-content
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 50px 0
+		width: 100%
+		min-height: 100vh
+		box-sizing: border-box
+		&-form
+			position: relative
+			display: none
+			flex-direction: column
+			padding: 22px 40px 40px
+			width: 444px
+			max-width: calc(100% - 30px)
+			box-sizing: border-box
+			background-color: #fff
+			opacity: 0
+			transition: .25s
+			+r(1200)
+				padding: 22px 35px 40px
+			+r(1000)
+				padding: 22px 30px 35px
+			+r(600)
+				padding: 22px 25px 30px
+			+r(400)
+				padding: 22px 20px 20px
+			&.is-active
+				display: flex
+				opacity: 1
+			&__title
+				margin-bottom: 25px
+				text-align: center
+				font-family: $const
+				+fs(20)
+				+lh(20, 27)
+				font-weight: 600
+				color: $blue
+				+r(1200)
+					+fs(26)
+				+r(1000)
+					+fs(24)
+				+r(800)
+					+fs(22)
+				+r(600)
+					+fs(20)
+				+r(400)
+					+fs(18)
+
+			&-label
+				display: block
+				margin-bottom: 20px
+				width: 100%
+				&:last-of-type
+					margin-bottom: 40px
+				&__text
+					display: block
+					margin-bottom: 10px
+					+fs(14)
+					font-weight: 700
+				&__input
+					display: block
+					box-sizing: border-box
+					padding: 6px 10px
+					width: 100%
+					height: 39px
+					+fs(16)
+					border: 2px solid $pink
+					transition: .25s
+					&:hover
+						border-color: $blue
+					&:focus
+						border-color: $orange
+					&_textarea
+						height: 120px
+						resize: none
+					&.input-date
+						display: none
+				.datepicker-inline .datepicker
+					width: 100%
+					border-color: $pink
+					border-width: 2px
+					border-radius: 0
+				.datepicker--cell.-selected-,
+				.datepicker--cell.-selected-
+					background-color: $pink
+					transition: .25s
+					&.-current-
+						background-color: $pink
+					&.-focus-
+						background-color: $orange
+				.datepicker--cell.-current-, .datepicker--cell.-current-.-in-range-
+					color: $pink
+
+			// .input
+			// 	// margin-bottom: 15px
+			// 	// display: block
+			// 	width: 100%
+			// 	height: 40px
+			// 	border-color: $blue
+			// 	&.input-date
+			// 		margin-bottom: 10px
+			// 	&:hover
+			// 		border-color: $pink
+			// 	&:focus
+			// 		border-color: $blue
+			// .datepicker-inline
+			// 	margin-bottom: 15px
+				
+
+			// textarea.input
+			// 	padding:
+			// 		top: 6px
+			// 		bottom: 6px
+			// 	height: 120px
+			// 	resize: none
+
+			.btn
+				align-self: center

@@ -1,0 +1,73 @@
+.header
+	box-sizing: border-box
+	padding: 10px 0 10px
+	width: 100%
+	background-color: #fff
+	&.is-fixed
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 20
+		width: 100%
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&-logo
+		margin-right: 45px
+		display: inline-block
+		vertical-align: middle
+		&__img
+			display: inline-block
+			vertical-align: middle
+			max-width: 100%
+			width: auto
+			height: auto
+
+	.mobile-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&-nav-list
+		display: flex
+		&-li
+			margin: auto 6px
+			&__link
+				display: inline-block
+				vertical-align: middle
+				box-sizing: border-box
+				padding: 10px
+				text-align: center
+				font-family: $got
+				+fs(16)
+				+lh(16, 30)
+				letter-spacing: 0.04em
+				font-weight: 700
+				color: $blue
+				text-decoration: none
+				transition: .25s
+				&:hover
+					color: $orange
+
+	&-info
+		margin-left: 45px
+		width: 202px
+		text-align: center
+		&__link
+			display: inline-block
+			vertical-align: middle
+			margin-bottom: 5px
+			text-align: center
+			+fs(14)
+			line-height: normal
+			font-weight: 700
+			color: $blue
+			text-decoration: none
+			transition: .25s
+			&:hover
+				color: $pink
+				text-decoration: underline
+
+
