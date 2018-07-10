@@ -1,0 +1,242 @@
+.page-event
+	padding: 75px 0 115px
+	+image('page-event-bg.jpg')
+	background-position: top right
+	background-repeat: no-repeat
+	background-size: 100% auto
+	+r(1200)
+		padding: 75px 0 105px
+	+r(1000)
+		padding: 65px 0 90px
+	+r(800)
+		padding: 55px 0 80px
+	+r(600)
+		padding: 45px 0 70px
+	&__link-back
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		margin-bottom: 20px
+		box-sizing: border-box
+		text-decoration: none
+		+fs(16)
+		font-weight: 700
+		color: $blue
+		transition: .25s
+		+r(600)
+			+fs(14)
+		&::before
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+			border:
+				top: 20px solid transparent
+				right: 20px solid rgba($pink, .5)
+				bottom: 20px solid transparent
+			transition: .25s
+		&:hover
+			text-decoration: none
+			color: $pink 
+			&::before
+				border-right-color: $pink
+
+	&-article
+		&__title
+			margin: 0 auto 50px
+			text-align: center
+			font-family: $const
+			+fs(27)
+			font-weight: 700
+			font-style: italic
+			color: $blue
+			+r(900)
+				margin-bottom: 35px
+				+fs(25)
+			+r(600)
+				margin-bottom: 25px
+				+fs(22)
+			+r(400)
+				margin-bottom: 20px
+				+fs(20)
+		&__text
+			margin: 0 auto 60px
+			width: 100%
+			max-width: 660px
+			text-align: center
+			+fs(18)
+			+lh(18, 26)
+			+r(900)
+				margin-bottom: 35px
+				+fs(16)
+			+r(600)
+				margin-bottom: 25px
+				+fs(14)
+			+r(400)
+				margin-bottom: 20px
+		&__video-wrapper
+			display: flex
+			flex-wrap: wrap
+			align-items: flex-start
+		&__video
+			margin-bottom: 50px
+			margin-right: 50px
+			width: calc((100% - 50px) / 2)
+			height: auto
+			max-height: auto
+			+r(1200)
+				margin-right: 40px
+				margin-bottom: 20px
+				width: calc((100% - 40px) / 2)
+			+r(1000)
+				margin-right: 30px
+				margin-bottom: 15px
+				width: calc((100% - 30px) / 2)
+			+r(800)
+				margin-right: 20px
+				margin-bottom: 10px
+				width: calc((100% - 20px) / 2)
+			+r(600)
+				margin-right: 0
+				width: 100%
+			&:nth-of-type(even)
+				margin-right: 0
+			&:last-of-type
+				margin: 0 auto 25px
+				+r(1200)
+					margin-bottom: 20px
+				+r(1000)
+					margin-bottom: 15px
+				+r(800)
+					margin-bottom: 10px
+
+
+
+.slider-for
+	position: relative
+	margin: 0 auto 20px
+	box-sizing: border-box
+	padding: 0 65px
+	width: 100%
+	max-width: 920px
+	overflow: hidden
+	+r(1200)
+		padding: 0 55px
+	+r(1000)
+		padding: 0 45px
+	+r(800)
+		padding: 0 35px
+	+r(600)
+		margin-bottom: 10px
+		padding: 0 30px
+	+r(400)
+		padding: 0 25px
+	.slick-track
+		display: flex!important
+		
+	.slick-arrow
+		position: absolute
+		top: 0
+		width: 20px
+		height: 100%
+		font-size: 0
+		background-color: transparent
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 0
+			width: 0
+			height: 0
+			transform: translateY(-50%)
+			transition: .25s
+		&.slick-prev
+			left: 0
+			&::before
+				border:
+					top: 20px solid transparent
+					right: 20px solid rgba($pink, .5)
+					bottom: 20px solid transparent
+			&:hover::before
+				border-right-color: $pink
+		&.slick-next
+			right: 0
+			&::before
+				border:
+					top: 20px solid transparent
+					left: 20px solid rgba($pink, .5)
+					bottom: 20px solid transparent
+			&:hover::before
+				border-left-color: $pink
+	&-slide
+		display: flex
+		justify-content: center
+		align-items: center
+		text-align: center
+		width: 100%
+		height: 100%
+		&__img
+			display: inline-block
+			vertical-align: middle
+			margin: 0 auto
+			width: auto
+			height: auto
+			max-width: 100%
+			max-height: 480px
+			// @supports(object-fit: cover)
+			// 	width: 100%
+			// 	height: 100%
+			// 	object-fit: cover
+
+.slider-nav
+	margin-bottom: 120px
+	+r(1200)
+		margin-bottom: 100px
+	+r(1000)
+		margin-bottom: 80px
+	+r(800)
+		margin-bottom: 60px
+	+r(600)
+		margin-bottom: 40px
+	.slick-track
+		display: flex
+	&-slide
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		text-align: center
+		width: 100%
+		height: 140px
+		overflow: hidden
+		cursor: pointer
+		+r(1000)
+			height: 120px
+		+r(800)
+			height: 100px
+		+r(600)
+			height: 80px
+		+r(400)
+			height: 60px
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba($blue, .4)
+			transition: .25s
+			opacity: 0
+		&:hover::before
+			opacity: 1
+		&__img
+			display: inline-block
+			vertical-align: middle
+			width: 100%
+			height: auto
+			@supports(object-fit: cover)
+				width: 100%
+				height: 100%
+				object-fit: cover
+

@@ -1,0 +1,91 @@
+---
+title: Название мероприятия
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	<!-- begin header -->
+	{% include "partials/_header.html" %}
+	<!-- end header -->
+
+	<div class="page-event">
+		<div class="container">
+			
+			<a href="gallery.html" class="page-event__link-back">Вернуться назад</a>
+
+			<article class="page-event-article">
+				
+				<h1 class="page-event-article__title">Название мероприятия</h1>
+			
+				<div class="page-event-article__text">
+					<p>Небольшое описание собыяти, где состоялось, чему посвящалось. В каком стиле задумывалось мероприятие, кто выступал,  и т.п. Можно описать с кем работали для воплощения задумки</p>
+				</div>
+
+				<div class="page-event-article__slider-for slider-for">
+					<div class="slider-for-slide">
+						<img src="img/gallery-1.jpg" alt="" class="slider-for-slide__img">
+					</div>
+					<div class="slider-for-slide">
+						<img src="img/gallery-2.jpg" alt="" class="slider-for-slide__img">
+					</div>
+					<div class="slider-for-slide">
+						<img src="img/gallery-3.jpg" alt="" class="slider-for-slide__img">
+					</div>
+					<div class="slider-for-slide">
+						<img src="img/gallery-4.jpg" alt="" class="slider-for-slide__img">
+					</div>
+					<div class="slider-for-slide">
+						<img src="img/gallery-5.jpg" alt="" class="slider-for-slide__img">
+					</div>
+					<div class="slider-for-slide">
+						<img src="img/gallery-6.jpg" alt="" class="slider-for-slide__img">
+					</div>
+					<div class="slider-for-slide">
+						<img src="img/gallery-7.jpg" alt="" class="slider-for-slide__img">
+					</div>
+					<div class="slider-for-slide">
+						<img src="img/gallery-8.jpg" alt="" class="slider-for-slide__img">
+					</div>
+				</div>
+
+				<div class="page-event-article__slider-nav slider-nav">
+					<div class="slider-nav-slide">
+						<img src="img/gallery-1.jpg" alt="" class="slider-nav-slide__img">
+					</div>
+					<div class="slider-nav-slide">
+						<img src="img/gallery-2.jpg" alt="" class="slider-nav-slide__img">
+					</div>
+					<div class="slider-nav-slide">
+						<img src="img/gallery-3.jpg" alt="" class="slider-nav-slide__img">
+					</div>
+					<div class="slider-nav-slide">
+						<img src="img/gallery-4.jpg" alt="" class="slider-nav-slide__img">
+					</div>
+					<div class="slider-nav-slide">
+						<img src="img/gallery-5.jpg" alt="" class="slider-nav-slide__img">
+					</div>
+					<div class="slider-nav-slide">
+						<img src="img/gallery-6.jpg" alt="" class="slider-nav-slide__img">
+					</div>
+					<div class="slider-nav-slide">
+						<img src="img/gallery-7.jpg" alt="" class="slider-nav-slide__img">
+					</div>
+					<div class="slider-nav-slide">
+						<img src="img/gallery-8.jpg" alt="" class="slider-nav-slide__img">
+					</div>
+				</div>
+
+				<div class="page-event-article__video-wrapper">
+					<video src="video/video.mp4" class="page-event-article__video" poster="img/video-poster.jpg" controls></video>
+					<video src="video/video.mp4" class="page-event-article__video" poster="img/video-poster.jpg" controls></video>
+					<video src="video/video.mp4" class="page-event-article__video" poster="img/video-poster.jpg" controls></video>
+					<video src="video/video.mp4" class="page-event-article__video" poster="img/video-poster.jpg" controls></video>
+				</div>
+
+			</article>
+
+		</div>
+	</div>
+
+{% endblock %}

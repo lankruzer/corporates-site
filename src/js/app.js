@@ -76,7 +76,7 @@ if (document.querySelector('.reviews-slider')) {
 	$('.reviews-slider').slick({
 		dots: false,
 		arrows: true,
-		 responsive: [
+		responsive: [
 			{
 				breakpoint: 800,
 				settings: {
@@ -163,5 +163,39 @@ if (document.querySelector('.btn-mobile-menu')) {
 			}
 		}
 		mobileBlock.toggleClass('is-active');
+	});
+}
+
+//page event sliders
+if (document.querySelector('.page-event-article__slider-for') && document.querySelector('.page-event-article__slider-nav')) {
+	$('.slider-for').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		fade: true,
+		adaptiveHeight: true,
+		asNavFor: '.slider-nav'
+	});
+
+	$('.slider-nav').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		arrows: false,
+		asNavFor: '.slider-for',
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 1000,
+				settings: {
+      				slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+      				slidesToShow: 3
+				}
+			}
+		]
 	});
 }
