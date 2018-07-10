@@ -4,6 +4,10 @@
 	+image('lid-1.jpg')
 	+cover
 	background-position: center center
+	+r(900)
+		padding: 50px 0 60px
+	+r(800)
+		padding: 40px 0 50px
 	&::before
 		content: ''
 		position: absolute
@@ -22,10 +26,33 @@
 		font-weight: 700
 		font-style: italic
 		color: #fff
+		+r(1200)
+			+fs(25)
+		+r(900)
+			+fs(23)
+		+r(800)
+			+fs(21)
 		&_top
 			margin-bottom: 48px
+			+r(1200)
+				margin-bottom: 35px
+			+r(1100)
+				margin-bottom: 30px
+			+r(900)
+				margin-bottom: 25px
+			+r(800)
+				margin-bottom: 20px
 	.btn
 		margin-bottom: 48px
 		+fs(18)
+		margin-bottom: 48px
+		+r(1200)
+			margin-bottom: 35px
+		+r(1100)
+			margin-bottom: 30px
+		+r(900)
+			margin-bottom: 25px
+		+r(800)
+			margin-bottom: 20px
 		&:hover
 			color: #fff

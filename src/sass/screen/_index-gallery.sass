@@ -6,6 +6,13 @@
 .index-gallery
 	margin-bottom: 60px
 	display: flex
+	+r(1100)
+		margin-bottom: 50px
+	+r(900)
+		margin-bottom: 40px
+	+r(800)
+		margin-bottom: 30px
+		flex-wrap: wrap
 	&__row
 		display: flex
 		flex-wrap: wrap
@@ -16,8 +23,17 @@
 		flex-direction: column
 		&_20
 			width: 20%
+			+r(700)
+				width: 35%
 		&_40
 			width: 40%
+			&:first-of-type
+				+r(700)
+					width: 100%
+			&:nth-of-type(2)
+				+r(700)
+					width: 65%
+
 		&_50
 			width: 50%
 	&-img
@@ -50,6 +66,10 @@
 			background-color: rgba($blue, .7)
 			opacity: 0
 			transition: .25s
+			+r(800)
+				+fs(14)
+			+r(420)
+				+fs(12)
 		&__img
 			display: inline-block
 			vertical-align: middle

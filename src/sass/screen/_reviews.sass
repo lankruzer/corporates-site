@@ -9,6 +9,19 @@
 		padding: 0 100px
 		width: 100%
 		max-width: 755px
+		+r(1100)
+			margin-bottom: 50px
+		+r(1000)
+			margin-bottom: 40px
+		+r(900)
+			margin-bottom: 30px
+		+r(800)
+			margin-bottom: 20px
+			padding: 0 60px
+		+r(700)
+			padding: 0 40px
+		+r(500)
+			padding: 0 30px
 	&__slider
 		width: 100%
 
@@ -40,6 +53,12 @@
 			transition: .25s
 		&.slick-prev
 			left: -100px
+			+r(800)
+				left: -60px
+			+r(700)
+				left: -40px
+			+r(500)
+				left: -30px
 			&::before
 				border:
 					top: 20px solid transparent
@@ -48,7 +67,13 @@
 			&:hover::before
 				border-right-color: $pink
 		&.slick-next
-			right: -100px 
+			right: -100px
+			+r(800)
+				right: -60px
+			+r(700)
+				right: -40px
+			+r(500)
+				right: -30px
 			&::before
 				border:
 					top: 20px solid transparent
@@ -65,6 +90,12 @@
 			+fs(16)
 			+lh(16, 24)
 			color: $blue
+			+r(800)
+				padding: 30px 20px
+			+r(700)
+				padding: 20px 10px
+			+r(600)
+				+fs(14)
 		&__footer
 			display: flex
 			justify-content: center
@@ -76,6 +107,9 @@
 			color: #fff
 			+image('review-footer-bg.png')
 			background-size: 100% 100%
+			+r(600)
+				min-height: 60px
+				+fs(16)
 		&__read-more
 			display: inline-block
 			font-family: $got

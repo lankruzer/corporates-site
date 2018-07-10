@@ -18,6 +18,14 @@
 		// flex-direction: column
 	&-logo
 		width: 25%
+		+r(850)
+			width: 30%
+		+r(700)
+			margin-bottom: 35px
+			width: 50%
+		+r(500)
+			width: 100%
+			text-align: center
 		&-link
 			text-decoration: none
 			&__img
@@ -26,6 +34,14 @@
 				height: auto
 	&-contacts
 		width: 25%
+		+r(850)
+			width: 30%
+		+r(700)
+			margin-bottom: 35px
+			width: 50%
+		+r(500)
+			width: 100%
+			text-align: center
 		.footer-link
 			margin-bottom: 20px
 	&-address
@@ -34,20 +50,43 @@
 		color: #fff
 	&-nav
 		width: 50%
+		+r(850)
+			width: 40%
+		+r(700)
+			margin-bottom: 35px
+			width: 100%
 		&-list
 			text-align: right
 			&-li
 				margin-bottom: 12px
 				display: block
+				+r(700)
+					width: 100%
+					text-align: center
 				&:last-of-type
 					margin-bottom: 0
-				// min-width: 145px
-				// text-align: left
 				&:nth-of-type(1),
 				&:nth-of-type(2),
 				&:nth-of-type(3)
 					min-width: 185px
 					display: inline-block
+					+r(1200)
+						min-width: 150px
+					+r(920)
+						min-width: 135px
+					+r(850)
+						width: 100%
 	&-copy
 		width: 25%
 		align-self: flex-end
+		+r(850)
+			width: 30%
+		+r(700)
+			order: 10
+			width: 100%
+			text-align: center
+
+	.soc-list
+		margin-bottom: 35px
+		justify-content: center
+		width: 100%

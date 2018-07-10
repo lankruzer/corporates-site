@@ -1,5 +1,11 @@
 .screen
 	padding: 74px 0 116px
+	+r(1200)
+		padding: 64px 0 96px
+	+r(920)
+		pading: 54px 0 76px
+	+r(800)
+		padding: 40px 0 60px
 	&__title
 		margin: 0 auto 50px
 		text-align: center
@@ -9,6 +15,15 @@
 		font-weight: 700
 		font-style: italic
 		color: $blue
+		+r(1200)
+			margin-bottom: 40px
+			+fs(25)
+		+r(920)
+			margin-bottom: 30px
+			+fs(23)
+		+r(800)
+			margin-bottom: 20px
+			+fs(21)
 	&__wrapper
 		display: flex
 		flex-wrap: wrap
