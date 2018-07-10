@@ -1,0 +1,91 @@
+---
+title: Галерея
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	<!-- begin header -->
+	{% include "partials/_header.html" %}
+	<!-- end header -->
+	
+	<div class="container">
+
+		<div class="gallery">
+			<div class="gallery-top">
+				<a href="index.html" class="gallery-top-logo">
+					<img src="img/gallery-logo.png" alt="" class="gallery-top-logo__img">
+				</a>
+			</div>
+
+			<ul class="gallery-filter">
+				<li class="gallery-filter-li">
+					<button class="gallery-filter-li__btn is-active" type="button">Всё</button>
+				</li>
+				<li class="gallery-filter-li">
+					<button class="gallery-filter-li__btn" type="button">Организация мероприятий</button>
+				</li>
+				<li class="gallery-filter-li">
+					<button class="gallery-filter-li__btn" type="button">Выпускные вечера</button>
+				</li>
+				<li class="gallery-filter-li">
+					<button class="gallery-filter-li__btn" type="button">Кейтеринг</button>
+				</li>
+			</ul>
+
+			<div class="gallery__wrapper">
+					
+				<div class="gallery-col gallery-col_66">
+
+					<a href="event.html" class="gallery-col gallery-col_50 gallery-col_link">
+						<img src="img/gallery-1.jpg" alt="" class="gallery-col__img">
+						<span class="gallery-col-overlay">Название мероприятия 1</span>
+					</a>
+					<a href="event.html" class="gallery-col gallery-col_50 gallery-col_link">
+						<img src="img/gallery-2.jpg" alt="" class="gallery-col__img">
+						<span class="gallery-col-overlay">Название мероприятия 2</span>
+					</a>
+
+					<a href="event.html" class="gallery-col gallery-col_100 gallery-col_link">
+						<img src="img/gallery-4.jpg" alt="" class="gallery-col__img">
+						<span class="gallery-col-overlay">Название мероприятия 3</span>
+					</a>
+
+				</div>
+
+				<a href="event.html" class="gallery-col gallery-col_33 gallery-col_link">
+					<img src="img/gallery-3.jpg" alt="" class="gallery-col__img">
+					<span class="gallery-col-overlay">Название мероприятия 4</span>
+				</a>
+
+				<a href="event.html" class="gallery-col gallery-col_33 gallery-col_link">
+					<img src="img/gallery-5.jpg" alt="" class="gallery-col__img">
+					<span class="gallery-col-overlay">Название мероприятия 5</span>
+				</a>
+
+				<div class="gallery-col gallery-col_66">
+
+					<a href="event.html" class="gallery-col gallery-col_50 gallery-col_link">
+						<img src="img/gallery-6.jpg" alt="" class="gallery-col__img">
+						<span class="gallery-col-overlay">Название мероприятия 6</span>
+					</a>
+					<a href="event.html" class="gallery-col gallery-col_50 gallery-col_link">
+						<img src="img/gallery-7.jpg" alt="" class="gallery-col__img">
+						<span class="gallery-col-overlay">Название мероприятия 7</span>
+					</a>
+
+					<a href="event.html" class="gallery-col gallery-col_100 gallery-col_link">
+						<img src="img/gallery-8.jpg" alt="" class="gallery-col__img">
+						<span class="gallery-col-overlay">Название мероприятия 8</span>
+					</a>
+
+				</div>
+
+			</div>
+			
+		</div>
+		
+	</div>
+	
+
+{% endblock %}

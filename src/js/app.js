@@ -2,6 +2,7 @@ import $ from 'jquery';
 import slick from 'slick-carousel';
 import lightbox from 'lightbox2';
 import '../js/popups.js';
+// import '../js/tabs.js';
 import datepicker from 'air-datepicker';
 
 
