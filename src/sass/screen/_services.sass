@@ -25,7 +25,10 @@
 		flex-direction: column
 		justify-content: flex-end
 		align-items: center
-		min-height: 180px
+		height: 180px
+		@supports(object-fit: cover)
+			height: auto
+			min-height: 180px
 	&__img
 		max-width: 80%
 		max-height: 100px
@@ -42,7 +45,10 @@
 		box-sizing: border-box
 		padding: 0 10px 15px
 		width: 100%
-		min-height: 66px
+		height: 66px
+		@supports(object-fit: cover)
+			height: auto
+			min-height: 66px
 		text-align: center
 		font-family: $got
 		+fs(14)

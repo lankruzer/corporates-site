@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import slick from 'slick-carousel';
 import lightbox from 'lightbox2';
+import Inputmask from 'inputmask';
 import '../js/popups.js';
 import '../js/custom-select.js';
 import '../js/reviews-filter.js';
@@ -198,5 +199,14 @@ if (document.querySelector('.page-event-article__slider-for') && document.queryS
 				}
 			}
 		]
+	});
+}
+
+// inputmask
+if (document.querySelector('input[type=tel]')) {
+	var selectors = document.querySelectorAll('input[type=tel]');
+	var im = new Inputmask('+375(99)-999-99-99');
+	selectors.forEach( function(element, index) {
+		im.mask(element);
 	});
 }

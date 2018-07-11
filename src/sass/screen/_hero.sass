@@ -70,7 +70,12 @@
 				display: flex
 				padding: 10px 0
 				box-sizing: border-box
-				min-height: 260px
+				width: 100%
+				height: 260px
+				@supports (object-fit: cover)
+					height: auto
+					min-height: 260px
+				// min-height: 260px
 				flex-direction: column
 				justify-content: center
 				align-items: center
@@ -80,6 +85,7 @@
 					min-height: 200px
 			&__title
 				margin: auto auto 20px
+				width: 100%
 				text-align: center
 				font-family: $const
 				+fs(30)

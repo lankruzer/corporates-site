@@ -60,7 +60,10 @@
 		box-sizing: border-box
 		padding: 0 20px 10px
 		width: 100%
-		min-height: 86px
+		height: 86px
+		@supports(object-fit: cover)
+			height: auto
+			min-height: 86px
 		text-align: center
 		font-family: $got
 		+fs(18)
