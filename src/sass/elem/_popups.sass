@@ -14,10 +14,10 @@
 		z-index: 100
 	&__close
 		position: absolute
-		top: 0
-		right: 0
-		width: 40px
-		height: 40px
+		top: 5px
+		right: 5px
+		width: 30px
+		height: 30px
 		font-size: 0
 		cursor: pointer
 		border: 0
@@ -97,6 +97,9 @@
 				width: 100%
 				&:last-of-type
 					margin-bottom: 40px
+				&_check:last-of-type
+					margin-bottom: 20px
+
 				&__text
 					display: block
 					margin-bottom: 10px
@@ -120,6 +123,7 @@
 						resize: none
 					&.input-date
 						display: none
+				
 				.datepicker-inline .datepicker
 					width: 100%
 					border-color: $pink
@@ -135,6 +139,29 @@
 						background-color: $orange
 				.datepicker--cell.-current-, .datepicker--cell.-current-.-in-range-
 					color: $pink
+				
+				&__recommend-pseudo-input path
+					transition: .25s
+				&_check
+					display: flex
+					justify-content: center
+					align-items: center
+					cursor: pointer
+					&:hover .overlay-content-form-label__recommend-pseudo-input path
+						fill: rgba($pink, .5)
+				&__recommend-input
+					display: none
+					&:checked + .overlay-content-form-label__recommend-pseudo-input path
+						fill: $pink
+				&__recommend-text
+					display: inline-block
+					margin-bottom: 5px
+					margin-left: 5px
+					+fs(16)
+					font-weight: 700
 					
 			.btn
 				align-self: center
+				& + .overlay-content-form__title
+					margin-top: 20px
+					margin-bottom: 0

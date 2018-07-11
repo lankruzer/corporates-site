@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Отзывы</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <base href="/">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+  <body>
+    <!-- BEGIN content -->
+    <main class="main">
+      <!-- begin header -->
+      <header class="header">
+        <div class="container">
+          <a href="#" class="header-logo">
+            <img src="img/header-logo.png" alt="" class="header-logo__img"> </a>
+          <button class="btn-mobile-menu" type="button">
+            <span class="lines"></span>
+          </button>
+          <div class="mobile-block">
+            <nav class="header-nav">
+              <ul class="header-nav-list">
+                <li class="header-nav-list-li">
+                  <a href="#" class="header-nav-list-li__link">КОРПОРАТИВЫ</a>
+                </li>
+                <li class="header-nav-list-li">
+                  <a href="#" class="header-nav-list-li__link">КЕЙТЕРИНГ</a>
+                </li>
+                <li class="header-nav-list-li">
+                  <a href="#" class="header-nav-list-li__link">ВЫПУСКНЫЕ</a>
+                </li>
+                <li class="header-nav-list-li">
+                  <a href="#" class="header-nav-list-li__link">ПРОКАТ</a>
+                </li>
+                <li class="header-nav-list-li">
+                  <a href="gallery.html" class="header-nav-list-li__link">ГАЛЕРЕЯ</a>
+                </li>
+                <li class="header-nav-list-li">
+                  <a href="reviews.html" class="header-nav-list-li__link">ОТЗЫВЫ</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-info">
+              <a href="tel:+375456768787" class="header-info__link">Тел. +375(45) 676-87-87</a>
+              <button class="btn btn_pink-transparent btn-open-app-js" type="button">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <div class="page-reviews">
+        <div class="container">
+          <h2 class="page-reviews__title">Отзывы</h2>
+          <div class="btn-wrapper">
+            <button class="btn btn-open-reviews-js">Оставить отзыв</button>
+          </div>
+          <div class="page-reviews-select">
+            <div class="page-reviews-select__text">Смотреть</div>
+            <div class="page-reviews-select__select custom-select">
+              <select name="reviews-category" class="page-reviews-select__select-js">
+                <!-- <option>Всё</option> -->
+                <option>Всё</option>
+                <option value="0">Всё</option>
+                <option value="1">Организация мероприятий</option>
+                <option value="2">Выпускной вечер</option>
+                <option value="3">Кейтеринг</option>
+                <option value="4">Прокат оборудования и аксесуаров</option>
+              </select>
+            </div>
+          </div>
+          <ul class="page-reviews__reviews-list reviews-list">
+            <li class="reviews-list-li review" data-category="3">
+              <header class="review-header">
+                <div class="review-header__category">Кейтеринг</div>
+                <address class="review-header-address">
+                  <div class="review-header-address__name">Имя 1</div>
+                  <div class="review-header-address__date">5 октября 2018 в 19:15</div>
+                </address>
+                <!-- Если лайкнут, то добавляем класс review-header-like_liked -->
+                <div class="review-header-like">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px" class="review-header-like__icon">
+                    <path fill-rule="evenodd" stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "
+                    /> </svg>
+                  <span class="review-header-like__text">Рекомендую!</span>
+                </div>
+              </header>
+              <div class="review-content"> Спасибо за отличные закуски, всё свежее, вкусное, на начинку не скупитесь :)) Пирожки просто супер. К оговоренному времени всё было готово. Небольшой минус: на картинке мини сэндвичи румяные, по факту обычный. </div>
+            </li>
+            <li class="reviews-list-li review" data-category="3">
+              <header class="review-header">
+                <div class="review-header__category">Кейтеринг</div>
+                <address class="review-header-address">
+                  <div class="review-header-address__name">Имя 2</div>
+                  <div class="review-header-address__date">5 октября 2018 в 19:15</div>
+                </address>
+                <!-- Если лайкнут, то добавляем класс review-header-like_liked -->
+                <div class="review-header-like review-header-like_liked">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px" class="review-header-like__icon">
+                    <path fill-rule="evenodd" stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "
+                    /> </svg>
+                  <span class="review-header-like__text">Рекомендую!</span>
+                </div>
+              </header>
+              <div class="review-content" data-category=""> Спасибо за отличные закуски, всё свежее, вкусное, на начинку не скупитесь :)) Пирожки просто супер. К оговоренному времени всё было готово. Небольшой минус: на картинке мини сэндвичи румяные, по факту обычный. </div>
+            </li>
+            <li class="reviews-list-li review" data-category="1">
+              <header class="review-header">
+                <div class="review-header__category">Организация мероприятий</div>
+                <address class="review-header-address">
+                  <div class="review-header-address__name">Имя 3</div>
+                  <div class="review-header-address__date">5 октября 2018 в 19:15</div>
+                </address>
+                <div class="review-header-like review-header-like_liked">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px" class="review-header-like__icon">
+                    <path fill-rule="evenodd" stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "
+                    /> </svg>
+                  <span class="review-header-like__text">Рекомендую!</span>
+                </div>
+              </header>
+              <div class="review-content"> В эти выходные у нас был семейный праздник - это крестины нашей племяшки. Узким семейным кругом мы провели этот вечер в Провансе. Спасибо большое официантке, которая была услужлива и доброжелательна ко всем гостям. И конечно, спасибо повару
+                Александру за вкусные и необычные блюда. </div>
+            </li>
+            <li class="reviews-list-li review" data-category="1">
+              <header class="review-header">
+                <div class="review-header__category">Организация мероприятий</div>
+                <address class="review-header-address">
+                  <div class="review-header-address__name">Имя 4</div>
+                  <div class="review-header-address__date">5 октября 2018 в 19:15</div>
+                </address>
+                <div class="review-header-like review-header-like_liked">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px" class="review-header-like__icon">
+                    <path fill-rule="evenodd" stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "
+                    /> </svg>
+                  <span class="review-header-like__text">Рекомендую!</span>
+                </div>
+              </header>
+              <div class="review-content"> В эти выходные у нас был семейный праздник - это крестины нашей племяшки. Узким семейным кругом мы провели этот вечер в Провансе. Спасибо большое официантке, которая была услужлива и доброжелательна ко всем гостям. И конечно, спасибо повару
+                Александру за вкусные и необычные блюда. </div>
+            </li>
+            <li class="reviews-list-li review" data-category="2">
+              <header class="review-header">
+                <div class="review-header__category">Выпускной вечер</div>
+                <address class="review-header-address">
+                  <div class="review-header-address__name">Имя 5</div>
+                  <div class="review-header-address__date">5 октября 2018 в 19:15</div>
+                </address>
+                <div class="review-header-like review-header-like_liked">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px" class="review-header-like__icon">
+                    <path fill-rule="evenodd" stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "
+                    /> </svg>
+                  <span class="review-header-like__text">Рекомендую!</span>
+                </div>
+              </header>
+              <div class="review-content"> Мой поклон! Вас не узнать!!! С открытием,спасибо Вам за встречу и приятное общение с друзьями...! Будем сотрудничать! Мои гости,Ваши гости!!! </div>
+            </li>
+            <li class="reviews-list-li review" data-category="2">
+              <header class="review-header">
+                <div class="review-header__category">Выпускной вечер</div>
+                <address class="review-header-address">
+                  <div class="review-header-address__name">Имя 6</div>
+                  <div class="review-header-address__date">5 октября 2018 в 19:15</div>
+                </address>
+                <div class="review-header-like review-header-like_liked">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px" class="review-header-like__icon">
+                    <path fill-rule="evenodd" stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "
+                    /> </svg>
+                  <span class="review-header-like__text">Рекомендую!</span>
+                </div>
+              </header>
+              <div class="review-content"> Мой поклон! Вас не узнать!!! С открытием,спасибо Вам за встречу и приятное общение с друзьями...! Будем сотрудничать! Мои гости,Ваши гости!!! </div>
+            </li>
+            <li class="reviews-list-li review" data-category="4">
+              <header class="review-header">
+                <div class="review-header__category">Прокат оборудования и аксесуров</div>
+                <address class="review-header-address">
+                  <div class="review-header-address__name">Имя 7</div>
+                  <div class="review-header-address__date">5 октября 2018 в 19:15</div>
+                </address>
+                <div class="review-header-like review-header-like_liked">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px" class="review-header-like__icon">
+                    <path fill-rule="evenodd" stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "
+                    /> </svg>
+                  <span class="review-header-like__text">Рекомендую!</span>
+                </div>
+              </header>
+              <div class="review-content"> Спасибо за отличные закуски, всё свежее, вкусное, на начинку не скупитесь :)) Пирожки просто супер. К оговоренному времени всё было готово. Небольшой минус: на картинке мини сэндвичи румяные, по факту обычный. </div>
+            </li>
+            <li class="reviews-list-li review" data-category="4">
+              <header class="review-header">
+                <div class="review-header__category">Прокат оборудования и аксесуров</div>
+                <address class="review-header-address">
+                  <div class="review-header-address__name">Имя 8</div>
+                  <div class="review-header-address__date">5 октября 2018 в 19:15</div>
+                </address>
+                <div class="review-header-like review-header-like_liked">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px" class="review-header-like__icon">
+                    <path fill-rule="evenodd" stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "
+                    /> </svg>
+                  <span class="review-header-like__text">Рекомендую!</span>
+                </div>
+              </header>
+              <div class="review-content"> Спасибо за отличные закуски, всё свежее, вкусное, на начинку не скупитесь :)) Пирожки просто супер. К оговоренному времени всё было готово. Небольшой минус: на картинке мини сэндвичи румяные, по факту обычный. </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <!-- END content -->
+    <!-- begin footer -->
+    <div class="screen-map">
+      <div class="container">
+        <div class="screen-map-contacts">
+          <a href="tel:+375293600909" class="screen-map-contacts__link">Тел.: +375(29)360-09-09</a>
+          <address class="screen-map-contacts__address">Контактные данные компании</address>
+          <button class="btn btn_orange btn-open-app-js" type="button">Заказать звонок</button>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <a href="index.html" class="footer-logo-link">
+            <img src="img/footer-logo.png" alt="" class="footer-logo-link__img"> </a>
+        </div>
+        <div class="footer-contacts">
+          <a href="tel:+375293600909" class="footer-link">Тел.: +375(29)360-09-09</a>
+          <address class="footer-address">Контактные данные</address>
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-list-li">
+              <a href="#" class="footer-link footer-nav-list-li__link">Портфолио</a>
+            </li>
+            <li class="footer-nav-list-li">
+              <a href="#" class="footer-link footer-nav-list-li__link">Отзывы</a>
+            </li>
+            <li class="footer-nav-list-li">
+              <a href="#" class="footer-link footer-nav-list-li__link">Услуги</a>
+            </li>
+            <li class="footer-nav-list-li">
+              <a href="#" class="footer-link footer-nav-list-li__link">Корпоративные мероприятия</a>
+            </li>
+            <li class="footer-nav-list-li">
+              <a href="#" class="footer-link footer-nav-list-li__link">Выпускные вечера</a>
+            </li>
+            <li class="footer-nav-list-li">
+              <a href="#" class="footer-link footer-nav-list-li__link">Кейтеринг</a>
+            </li>
+            <li class="footer-nav-list-li">
+              <a href="#" class="footer-link footer-nav-list-li__link">Прокат</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="qlab.by" target="_blank" class="footer-link footer-copy">Разработано в Qlab.by</a>
+        <ul class="footer-soc soc-list">
+          <li class="soc-list-li">
+            <a href="#" class="soc-list-li-link">
+              <img src="img/soc-g-white.png" class="soc-list-li-link__img" alt=""> </a>
+          </li>
+          <li class="soc-list-li">
+            <a href="#" class="soc-list-li-link">
+              <img src="img/soc-im-white.png" class="soc-list-li-link__img" alt=""> </a>
+          </li>
+          <li class="soc-list-li">
+            <a href="#" class="soc-list-li-link">
+              <img src="img/soc-fb-white.png" class="soc-list-li-link__img" alt=""> </a>
+          </li>
+          <li class="soc-list-li">
+            <a href="#" class="soc-list-li-link">
+              <img src="img/soc-ok-white.png" class="soc-list-li-link__img" alt=""> </a>
+          </li>
+          <li class="soc-list-li">
+            <a href="#" class="soc-list-li-link">
+              <img src="img/soc-yb-white.png" class="soc-list-li-link__img" alt=""> </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- begin popups -->
+    <!-- begin overlay -->
+    <div class="overlay">
+      <!-- <button class="overlay__close" type="button">Закрыть<span class="lines"></span></button> -->
+      <div class="overlay-content">
+        <form action="#" method="post" class="overlay-content-form overlay-content-form-call">
+          <button class="overlay__close" type="button">Закрыть
+            <span class="lines"></span>
+          </button>
+          <div class="overlay-content-form__title">Оставьте номер телефона, и мы свяжемся с Вами</div>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Введите имя</span>
+            <input type="text" name="name" class="overlay-content-form-label__input input"> </label>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Введите номер телефона*</span>
+            <input type="tel" name="tel" class="overlay-content-form-label__input input" required> </label>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Оставьте сообщение</span>
+            <textarea name="message" class="overlay-content-form-label__input overlay-content-form-label__input_textarea input"></textarea>
+          </label>
+          <button class="btn btn-submit">Оставить заявку</button>
+        </form>
+        <form action="#" method="post" class="overlay-content-form overlay-content-form-app">
+          <button class="overlay__close" type="button">Закрыть
+            <span class="lines"></span>
+          </button>
+          <div class="overlay-content-form__title">Оставьте заявку и получите эксклюзивное предложение!</div>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Введите имя</span>
+            <input type="text" name="name" class="overlay-content-form-label__input input"> </label>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Введите номер телефона*</span>
+            <input type="tel" name="tel" class="overlay-content-form-label__input input" required> </label>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Оставьте сообщение</span>
+            <textarea name="message" class="overlay-content-form-label__input overlay-content-form-label__input_textarea input"></textarea>
+          </label>
+          <button class="btn btn-submit">Оставить заявку</button>
+        </form>
+        <form action="#" method="post" class="overlay-content-form overlay-content-form-calabration">
+          <button class="overlay__close" type="button">Закрыть
+            <span class="lines"></span>
+          </button>
+          <div class="overlay-content-form__title">Оставьте заявку и мы с Вами свяжемся!</div>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Выберите дату</span>
+            <input type="text" name="date" class="overlay-content-form-label__input input input-date" placeholder="Выберите дату"> </label>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Введите номер телефона*</span>
+            <input type="tel" name="tel" class="overlay-content-form-label__input input" required> </label>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Оставьте сообщение</span>
+            <textarea name="message" class="overlay-content-form-label__input overlay-content-form-label__input_textarea  input"></textarea>
+          </label>
+          <button class="btn btn-submit">Забронировать дату</button>
+        </form>
+        <form action="#" method="post" class="overlay-content-form overlay-content-form-reviews">
+          <button class="overlay__close" type="button">Закрыть
+            <span class="lines"></span>
+          </button>
+          <div class="overlay-content-form__title">Оставьте свой отзыв</div>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Выберите событие*</span>
+            <div class="custom-select">
+              <select name="review-category">
+                <option>Организация мероприятий</option>
+                <option value="0">Организация мероприятий</option>
+                <option value="1">Выпускной вечер</option>
+                <option value="2">Кейтеринг</option>
+                <option value="3">Прокат оборудования и аксесуаров</option>
+              </select>
+            </div>
+          </label>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Введите имя*</span>
+            <input type="text" name="name" class="overlay-content-form-label__input input" required> </label>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Введите номер телефона</span>
+            <input type="tel" name="tel" class="overlay-content-form-label__input input"> </label>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Введите отзыв*</span>
+            <textarea name="message" class="overlay-content-form-label__input overlay-content-form-label__input_textarea  input" required></textarea>
+          </label>
+          <label class="overlay-content-form-label overlay-content-form-label_check">
+            <input type="checkbox" name='recommend' value="recommend" class="overlay-content-form-label__recommend-input">
+            <span class="overlay-content-form-label__recommend-pseudo-input">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px">
+                <path fill-rule="evenodd" stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "
+                /> </svg>
+            </span>
+            <span class="overlay-content-form-label__recommend-text">Рекомендую!</span>
+          </label>
+          <button class="btn btn-submit">Оставить отызв</button>
+          <div class="overlay-content-form__title">Спасибо за отзыв</div>
+        </form>
+      </div>
+    </div>
+    <!-- end overlay
+    <!-- end popups -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <!-- END scripts -->
+  </body>
+</html>

@@ -1,0 +1,231 @@
+---
+title: Отзывы
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	<!-- begin header -->
+	{% include "partials/_header.html" %}
+	<!-- end header -->
+
+	<div class="page-reviews">
+
+		<div class="container">
+			
+			<h2 class="page-reviews__title">Отзывы</h2>
+
+			<div class="btn-wrapper">
+				<button class="btn btn-open-reviews-js">Оставить отзыв</button>
+			</div>
+
+			<div class="page-reviews-select">
+
+				<div class="page-reviews-select__text">Смотреть</div>
+
+				<div class="page-reviews-select__select custom-select">
+					<select name="reviews-category" class="page-reviews-select__select-js">
+						<!-- <option>Всё</option> -->
+						<option>Всё</option>
+						<option value="0">Всё</option>
+						<option value="1">Организация мероприятий</option>
+						<option value="2">Выпускной вечер</option>
+						<option value="3">Кейтеринг</option>
+						<option value="4">Прокат оборудования и аксесуаров</option>
+					</select>
+				</div>
+
+			</div>
+
+			<ul class="page-reviews__reviews-list reviews-list">
+
+				<li class="reviews-list-li review" data-category="3">
+					<header class="review-header">
+						<div class="review-header__category">Кейтеринг</div>
+						<address class="review-header-address">
+							<div class="review-header-address__name">Имя 1</div>
+							<div class="review-header-address__date">5 октября 2018 в 19:15</div>
+						</address>
+
+						<!-- Если лайкнут, то добавляем класс review-header-like_liked -->
+						<div class="review-header-like">
+							<svg xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							 width="24px" height="23px" class="review-header-like__icon">
+								<path fill-rule="evenodd"  stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "/>
+							</svg>
+							<span class="review-header-like__text">Рекомендую!</span>
+						</div>
+					</header>
+					
+					<div class="review-content">
+						Спасибо за отличные закуски, всё свежее, вкусное, на начинку не скупитесь :)) Пирожки просто супер. К оговоренному времени всё было готово. Небольшой минус: на картинке мини сэндвичи румяные, по факту обычный.
+					</div>
+				</li>
+
+				<li class="reviews-list-li review" data-category="3">
+					<header class="review-header">
+						<div class="review-header__category">Кейтеринг</div>
+						<address class="review-header-address">
+							<div class="review-header-address__name">Имя 2</div>
+							<div class="review-header-address__date">5 октября 2018 в 19:15</div>
+						</address>
+						
+						<!-- Если лайкнут, то добавляем класс review-header-like_liked -->
+						<div class="review-header-like review-header-like_liked">
+							<svg xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							 width="24px" height="23px" class="review-header-like__icon">
+								<path fill-rule="evenodd"  stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "/>
+							</svg>
+							<span class="review-header-like__text">Рекомендую!</span>
+						</div>
+					</header>
+					
+					<div class="review-content" data-category="">
+						Спасибо за отличные закуски, всё свежее, вкусное, на начинку не скупитесь :)) Пирожки просто супер. К оговоренному времени всё было готово. Небольшой минус: на картинке мини сэндвичи румяные, по факту обычный.
+					</div>
+				</li>
+
+				<li class="reviews-list-li review" data-category="1">
+					<header class="review-header">
+						<div class="review-header__category">Организация мероприятий</div>
+						<address class="review-header-address">
+							<div class="review-header-address__name">Имя 3</div>
+							<div class="review-header-address__date">5 октября 2018 в 19:15</div>
+						</address>
+						<div class="review-header-like review-header-like_liked">
+							<svg xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							 width="24px" height="23px" class="review-header-like__icon">
+								<path fill-rule="evenodd"  stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "/>
+							</svg>
+							<span class="review-header-like__text">Рекомендую!</span>
+						</div>
+					</header>
+					
+					<div class="review-content">
+						В эти выходные у нас был семейный праздник - это крестины нашей племяшки. Узким семейным кругом мы провели этот вечер в Провансе. Спасибо большое официантке, которая была услужлива и доброжелательна ко всем гостям. И конечно, спасибо повару Александру за вкусные и необычные блюда.
+					</div>
+				</li>
+
+				<li class="reviews-list-li review" data-category="1">
+					<header class="review-header">
+						<div class="review-header__category">Организация мероприятий</div>
+						<address class="review-header-address">
+							<div class="review-header-address__name">Имя 4</div>
+							<div class="review-header-address__date">5 октября 2018 в 19:15</div>
+						</address>
+						<div class="review-header-like review-header-like_liked">
+							<svg xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							 width="24px" height="23px" class="review-header-like__icon">
+								<path fill-rule="evenodd"  stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "/>
+							</svg>
+							<span class="review-header-like__text">Рекомендую!</span>
+						</div>
+					</header>
+					
+					<div class="review-content">
+						В эти выходные у нас был семейный праздник - это крестины нашей племяшки. Узким семейным кругом мы провели этот вечер в Провансе. Спасибо большое официантке, которая была услужлива и доброжелательна ко всем гостям. И конечно, спасибо повару Александру за вкусные и необычные блюда.
+					</div>
+				</li>
+
+				<li class="reviews-list-li review" data-category="2">
+					<header class="review-header">
+						<div class="review-header__category">Выпускной вечер</div>
+						<address class="review-header-address">
+							<div class="review-header-address__name">Имя 5</div>
+							<div class="review-header-address__date">5 октября 2018 в 19:15</div>
+						</address>
+						<div class="review-header-like review-header-like_liked">
+							<svg xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							 width="24px" height="23px" class="review-header-like__icon">
+								<path fill-rule="evenodd"  stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "/>
+							</svg>
+							<span class="review-header-like__text">Рекомендую!</span>
+						</div>
+					</header>
+					
+					<div class="review-content">
+						Мой поклон! Вас не узнать!!! С открытием,спасибо Вам за встречу и приятное общение с друзьями...! Будем сотрудничать! Мои гости,Ваши гости!!!
+					</div>
+				</li>
+
+				<li class="reviews-list-li review" data-category="2">
+					<header class="review-header">
+						<div class="review-header__category">Выпускной вечер</div>
+						<address class="review-header-address">
+							<div class="review-header-address__name">Имя 6</div>
+							<div class="review-header-address__date">5 октября 2018 в 19:15</div>
+						</address>
+						<div class="review-header-like review-header-like_liked">
+							<svg xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							 width="24px" height="23px" class="review-header-like__icon">
+								<path fill-rule="evenodd"  stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "/>
+							</svg>
+							<span class="review-header-like__text">Рекомендую!</span>
+						</div>
+					</header>
+					
+					<div class="review-content">
+						Мой поклон! Вас не узнать!!! С открытием,спасибо Вам за встречу и приятное общение с друзьями...! Будем сотрудничать! Мои гости,Ваши гости!!!
+					</div>
+				</li>
+
+				<li class="reviews-list-li review" data-category="4">
+					<header class="review-header">
+						<div class="review-header__category">Прокат оборудования и аксесуров</div>
+						<address class="review-header-address">
+							<div class="review-header-address__name">Имя 7</div>
+							<div class="review-header-address__date">5 октября 2018 в 19:15</div>
+						</address>
+						<div class="review-header-like review-header-like_liked">
+							<svg xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							 width="24px" height="23px" class="review-header-like__icon">
+								<path fill-rule="evenodd"  stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "/>
+							</svg>
+							<span class="review-header-like__text">Рекомендую!</span>
+						</div>
+					</header>
+					
+					<div class="review-content">
+						Спасибо за отличные закуски, всё свежее, вкусное, на начинку не скупитесь :)) Пирожки просто супер. К оговоренному времени всё было готово. Небольшой минус: на картинке мини сэндвичи румяные, по факту обычный.
+					</div>
+				</li>
+
+				<li class="reviews-list-li review" data-category="4">
+					<header class="review-header">
+						<div class="review-header__category">Прокат оборудования и аксесуров</div>
+						<address class="review-header-address">
+							<div class="review-header-address__name">Имя 8</div>
+							<div class="review-header-address__date">5 октября 2018 в 19:15</div>
+						</address>
+						<div class="review-header-like review-header-like_liked">
+							<svg xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							 width="24px" height="23px" class="review-header-like__icon">
+								<path fill-rule="evenodd"  stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "/>
+							</svg>
+							<span class="review-header-like__text">Рекомендую!</span>
+						</div>
+					</header>
+					
+					<div class="review-content">
+						Спасибо за отличные закуски, всё свежее, вкусное, на начинку не скупитесь :)) Пирожки просто супер. К оговоренному времени всё было готово. Небольшой минус: на картинке мини сэндвичи румяные, по факту обычный.
+					</div>
+
+				</li>
+
+			</ul>
+
+
+
+		</div>
+
+	</div>
+
+{% endblock %}

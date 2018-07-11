@@ -1,0 +1,167 @@
+.page-reviews
+	padding: 100px 0 115px
+	+image('page-reviews-bg.jpg')
+	background-position: top right
+	background-repeat: no-repeat
+	background-size: 100% auto
+	+r(1200)
+		padding: 90px 0 105px
+	+r(1000)
+		padding: 80px 0 90px
+	+r(800)
+		padding: 70px 0 80px
+	+r(600)
+		padding: 60px 0 70px
+	&__title
+		margin: 0 auto 35px
+		text-align: center
+		font-family: $const
+		+fs(27)
+		font-weight: 700
+		font-style: italic
+		color: $blue
+		+r(900)
+			margin-bottom: 30px
+			+fs(25)
+		+r(600)
+			margin-bottom: 25px
+			+fs(22)
+		+r(400)
+			margin-bottom: 20px
+			+fs(20)
+
+	.btn-wrapper
+		margin-bottom: 40px
+		+r(1000)
+			margin-bottom: 35px
+		+r(800)
+			margin-bottom: 30px
+		+r(600)
+			margin-bottom: 25px
+		+r(400)
+			margin-bottom: 20px
+
+	&-select
+		margin: 0 auto 80px
+		text-align: center
+		+r(1000)
+			margin-bottom: 70px
+		+r(800)
+			margin-bottom: 60px
+		+r(600)
+			margin-bottom: 50px
+		+r(400)
+			margin-bottom: 40px
+		&__text
+			display: inline-block
+			vertical-align: middle
+			margin-right: 20px
+			margin-left: -95px
+			+fs(18)
+			+r(660)
+				margin-left: auto
+				+fs(14)
+			+r(500)
+				margin-right: 0
+				margin-bottom: 10px
+				width: 100%
+		&__select
+			display: inline-block
+			vertical-align: middle
+			box-sizing: border-box
+			width: 368px
+			max-width: 100%
+			text-align: left
+			+fs(18)
+			+r(660)
+				+fs(14)
+
+.reviews-list
+	margin: 0 auto
+	width: 100%
+	max-width: 754px
+	&-li
+		display: block
+		margin-bottom: 60px
+		&.is-hide
+			display: none
+
+.review
+	&-header
+		display: flex
+		align-items: flex-start
+		margin-bottom: 20px
+		box-sizing: border-box
+		padding: 15px 40px 45px 20px
+		+image('review-header-bg.jpg')
+		background-size: 100% 100%
+		transition: .25s
+		+r(660)
+			margin-bottom: 10px
+			padding: 15px 15px 40px 15px
+		+r(550)
+			flex-wrap: wrap
+			background-position: top center
+			background-size: 320% 100%
+		&__category
+			margin-right: 20px
+			width: 154px
+			font-family: $const
+			+fs(18)
+			font-weight: 700
+			font-style: italic
+			+r(660)
+				+fs(16)
+			+r(550)
+				width: 100%
+				margin-right: 0
+				margin-bottom: 10px
+		&-address
+			align-self: flex-end
+			font-style: normal
+			+r(380)
+				margin-bottom: 10px
+			&__name
+				display: block
+				margin-bottom: 5px
+				+fs(18)
+				font-weight: 700
+				color: $pink
+				+r(660)
+					margin-bottom: 0
+					+fs(16)
+			&__date
+				+fs(14)
+				color: rgba($blue, .6)
+
+		&-like
+			margin-left: auto
+			margin-right: 0
+			+r(380)
+				margin-l: 0
+				margin-right: auto
+				width: 100%
+			&_liked
+				.review-header-like__icon path
+					fill: $pink
+			&__icon
+				display: inline-block
+				vertical-align: middle
+				box-sizing: border-box
+			&__text
+				display: inline-block
+				vertical-align: middle
+				+fs(18)
+				font-weight: 700
+				color: rgba($blue, .6)
+				+r(660)
+					+fs(15)
+
+	&-content
+		box-sizing: border-box
+		padding: 0 20px
+		+fs(17)
+		+lh(17, 28)
+		+r(660)
+			padding: 0 15px
+			+fs(15)

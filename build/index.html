@@ -587,6 +587,45 @@
           </label>
           <button class="btn btn-submit">Забронировать дату</button>
         </form>
+        <form action="#" method="post" class="overlay-content-form overlay-content-form-reviews">
+          <button class="overlay__close" type="button">Закрыть
+            <span class="lines"></span>
+          </button>
+          <div class="overlay-content-form__title">Оставьте свой отзыв</div>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Выберите событие*</span>
+            <div class="custom-select">
+              <select name="review-category">
+                <option>Организация мероприятий</option>
+                <option value="0">Организация мероприятий</option>
+                <option value="1">Выпускной вечер</option>
+                <option value="2">Кейтеринг</option>
+                <option value="3">Прокат оборудования и аксесуаров</option>
+              </select>
+            </div>
+          </label>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Введите имя*</span>
+            <input type="text" name="name" class="overlay-content-form-label__input input" required> </label>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Введите номер телефона</span>
+            <input type="tel" name="tel" class="overlay-content-form-label__input input"> </label>
+          <label class="overlay-content-form-label">
+            <span class="overlay-content-form-label__text">Введите отзыв*</span>
+            <textarea name="message" class="overlay-content-form-label__input overlay-content-form-label__input_textarea  input" required></textarea>
+          </label>
+          <label class="overlay-content-form-label overlay-content-form-label_check">
+            <input type="checkbox" name='recommend' value="recommend" class="overlay-content-form-label__recommend-input">
+            <span class="overlay-content-form-label__recommend-pseudo-input">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px">
+                <path fill-rule="evenodd" stroke="rgb(186, 93, 140)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.572,21.001 C11.572,21.001 -5.074,6.705 3.410,2.029 C8.303,-0.668 11.489,2.783 11.489,2.783 C11.489,2.783 14.674,-0.668 19.567,2.029 C28.051,6.705 11.572,21.001 11.572,21.001 "
+                /> </svg>
+            </span>
+            <span class="overlay-content-form-label__recommend-text">Рекомендую!</span>
+          </label>
+          <button class="btn btn-submit">Оставить отызв</button>
+          <div class="overlay-content-form__title">Спасибо за отзыв</div>
+        </form>
       </div>
     </div>
     <!-- end overlay

@@ -1,27 +1,16 @@
 ---
-title: Index page
+title: Пустая страница
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 	
-	{# variable example #}
-	<h1>{{title}}</h1>
-
-	
-	{# partial example #}
+	<!-- begin header -->
 	{% include "partials/_header.html" %}
+	<!-- end header -->
 
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
+	<div class="container">
+		<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quia, perspiciatis facere deserunt doloribus ad, error consequatur nostrum vitae in. Laboriosam perspiciatis a necessitatibus officia et consequatur cupiditate accusantium placeat.</h1>
+	</div>
 
 {% endblock %}

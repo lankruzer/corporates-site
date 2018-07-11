@@ -2,7 +2,8 @@ import $ from 'jquery';
 import slick from 'slick-carousel';
 import lightbox from 'lightbox2';
 import '../js/popups.js';
-// import '../js/tabs.js';
+import '../js/custom-select.js';
+import '../js/reviews-filter.js';
 import datepicker from 'air-datepicker';
 
 

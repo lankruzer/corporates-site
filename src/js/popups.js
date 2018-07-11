@@ -27,6 +27,15 @@ $( '.btn-open-calabration-js' ).click(function(event) {
 });
 // /open popup form
 
+// open popup form
+$( '.btn-open-reviews-js' ).click(function(event) {
+	event.preventDefault();
+	$( '.overlay' ).addClass( 'is-active' );
+	$( 'body' ).toggleClass( 'is-hide-scroll' );
+	$( '.overlay-content-form-reviews' ).addClass( 'is-active' );
+});
+// /open popup form
+
 // close popup form on click close
 $( '.overlay__close' ).click(function(event) {
 	event.preventDefault();

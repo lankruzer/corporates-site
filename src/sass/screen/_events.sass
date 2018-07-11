@@ -22,8 +22,12 @@
 
 .event
 	&:hover
-		.event__wrapper::before
-			opacity: 1
+		.event
+			&__wrapper::before
+				opacity: 1
+			&__title
+				background-size: 150% 100%
+
 	&__wrapper
 		position: relative
 		background-color: #ffe8d6
@@ -65,6 +69,7 @@
 		color: $blue
 		+image('event-title-bg.png')
 		background-size: 100% 100%
+		transition: .25s
 		+r(920)
 			padding: 0 10px 15px
 			min-height: 76px
